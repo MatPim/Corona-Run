@@ -5,16 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        canvas{
-            box-shadow: 0 10px 16px 0 rgba(60,64,67,0.302), 0 10px 6px 3px rgba(60,64,67,0.149);
-            height:600px;
-            width: 600px;
-            image-rendering: pixelated;
-            image-rendering: -moz-crisp-edges;
-            image-rendering: crisp-edges;
-            margin-left: 18%;
+        
+        @media(min-width: 700px){
+            canvas{
+                box-shadow: 0 10px 16px 0 rgba(60,64,67,0.302), 0 10px 6px 3px rgba(60,64,67,0.149);
+                height:600px;
+                width: 600px;
+                image-rendering: pixelated;
+                image-rendering: -moz-crisp-edges;
+                image-rendering: crisp-edges;
+                margin-left:15%;
+            
+            }
         }
-        .yep{}
+        @media(min-width: 200px, max-width: 699px){
+                canvas{
+                    box-shadow: 0 10px 16px 0 rgba(60,64,67,0.302), 0 10px 6px 3px rgba(60,64,67,0.149);
+                    height:600px;
+                    width: 600px;
+                    image-rendering: pixelated;
+                    image-rendering: -moz-crisp-edges;
+                    image-rendering: crisp-edges;
+                    margin-left:0%;
+            
+                }
+
+        }
         .col{
             border-bottom: 4px solid cadetblue;
             height: 80px;
