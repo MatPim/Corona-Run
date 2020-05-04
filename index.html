@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        canvas{
+            box-shadow: 0 10px 16px 0 rgba(60,64,67,0.302), 0 10px 6px 3px rgba(60,64,67,0.149);
+            height:600px;
+            width: 600px;
+            image-rendering: pixelated;
+            image-rendering: -moz-crisp-edges;
+            image-rendering: crisp-edges;
+            margin-left: 18%;
+        }
+        .col{
+            border-bottom: 4px solid cadetblue;
+            height: 80px;
+        }
+        
+        #title{
+            color: white;
+            padding-left: 30%;
+            font-size: 50px;
+            text-align: center;
+            margin-right: 600px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #data{
+            margin-top: -600px;
+            margin-right: 30%;
+            margin-left: 50%;
+            height: 600px;
+            background-color: cadetblue;
+        }
+        #players{
+            margin-left: 20px;
+            margin-right: 20px;
+            height: 500px;
+            background-color: white;
+            box-shadow: 0 10px 26px 0 rgba(60,64,67,0.302), 0 10px 6px 3px rgba(60,64,67,0.149);
+        }
+        h1{
+            text-align: center;
+            color: cadetblue;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Corona Run</h1>
+    <canvas height="50" width="50"></canvas>
+    <div id="data">
+        <label id="title">Score</label>
+        <div id="players">
+            <div id="col1" class="col"><label id="l1"></label></div>
+            <div id="col2" class="col"><label id="l2"></label></div>
+            <div id="col3" class="col"><label id="l3"></label></div>
+            <div id="col4" class="col"><label id="l4"></label></div>
+            <div id="col5" class="col"><label id="l5"></label></div>
+        </div>
+    </div>
+    
+
+    <script src="index.js"></script>
+
+</body>
+</html>
